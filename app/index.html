@@ -14,11 +14,10 @@
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
-    <!-- build:css({.tmp,app}) styles/main.css -->
-    <link rel="icon"  type="image/ico" href="/images/favicon.ico">
+    <!-- build:css({.tmp,app}) styles/app.css -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/app.css">
     <!-- endbuild -->
   </head>
   <body ng-app="mathFactsApp">
@@ -26,8 +25,7 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <header>
-      <nav class="navbar navbar-default">
+    <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner container">
         <div class="navbar-header">
           <a class="navbar-brand" href="/">Montessori Math Works</a>
@@ -37,17 +35,15 @@
           <li><a href="#stampgame"><i class="fa fa-shield"></i> Stamp Game</a></li>
         </ul>
       </div>
-    </header>
+    </div>
 
     <!-- Add your site or application content here -->
-    <div>
-      <div ng-view></div>
-    </div>
+    <div ng-view class="app-content"></div>
     <!-- <div class="container" ng-include="'views/main.html'" ng-controller="MainCtrl"></div> -->
 
-    <footer class="text-center">
+    <div id="footer" class="text-muted container navbar-brand navbar navbar-inverse navbar-fixed-bottom">
       Not sure what we need here but let's assume something!
-    </footer>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <!--<script>-->

@@ -7,16 +7,16 @@ var mathFactsApp = angular.module('mathFactsApp', [
 mathFactsApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      }).
-      when('/stampgame',{
-        templateUrl: 'views/gameboard.html',
-        controller: 'StampgameCtrl'
-      }).
-      otherwise({
-        redirectTo: '/'
-      });
+    when('/', {
+      templateUrl: 'views/main.html',
+      controller: 'MainCtrl'
+    }).
+    when('/stampgame', {
+      templateUrl: 'views/gameboard.html',
+      controller: 'StampgameCtrl'
+    }).
+    otherwise({
+      redirectTo: '/'
+    });
   }
 ]);
